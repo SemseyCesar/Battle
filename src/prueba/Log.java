@@ -162,7 +162,11 @@ public class Log
 		if (enemigosDestruidos>15)
 			juego.ganar(true);
 	}
-
+	
+	public void sumarPuntos(int puntos)
+	{
+		this.puntos+=puntos;
+	}
 	
 	public int cantEnemigosDestruidos(){return enemigosDestruidos;}
 

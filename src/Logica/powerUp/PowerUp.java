@@ -39,7 +39,10 @@ public abstract class PowerUp extends GameObject
 		{
 			sprite.animacion();
 			if(this.getCaja().intersects(log.getJugador().getCaja()))
+			{
 				this.effecto();
+				log.sumarPuntos(500);
+			}
 			try {
 				sleep(150);
 			} catch (InterruptedException e) {
